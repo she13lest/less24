@@ -1,0 +1,130 @@
+.top-section {
+  background-color: #f3c6bd;
+
+  @include for-large-up {
+    background-color: #f3c6bd;
+    padding-top: 39px;
+  }
+}
+
+.header {
+  height: 64px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+
+  @include for-large-up {
+    display: flex;
+    margin: auto;
+    width: 1140px;
+    height: 62px;
+    background: transparent;
+  }
+
+  &__button {
+    display: none;
+
+    @include for-large-up {
+      display: block;
+    }
+  }
+
+  &__menu-button {
+    width: 58px;
+    border: none;
+    border-left: 1px solid #00000026;
+    height: 100%;
+    margin-left: auto;
+    background: transparent;
+
+    @include for-large-up {
+      display: none;
+    }
+  }
+
+  &__menu-icon {
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    background-image: url('img-mobile/shape.png');
+    background-position: center;
+  }
+}
+
+.logo {
+  display: flex;
+
+  &__img {
+    margin-right: 13px;
+    height: 48px;
+    width: 48px;
+
+    @include for-large-up {
+      margin-right: 15px;
+      height: 60px;
+      width: 60px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  &__description {
+    display: none;
+
+    @include for-large-up {
+      font-size: 18px;
+      line-height: 25px;
+      color: #2b292d;
+      opacity: 0.6;
+    }
+  }
+}
+
+.navigation {
+  display: none;
+
+  @include for-large-up {
+    margin-left: auto;
+    list-style-type: none;
+    display: flex;
+    margin-top: 7px;
+    margin-right: 75px;
+  }
+
+  &__arrow {
+    display: inline-block;
+    background-image: url(img/arrow.png);
+    margin-left: 11px;
+    width: 8px;
+    height: 5px;
+  }
+}
+
+.nav-list__item {
+  display: none;
+
+  @include for-large-up {
+    display: block;
+    color: #2b292d;
+    text-decoration: none;
+    line-height: 25px;
+    font-size: 18px;
+    margin-right: 50px;
+  }
+
+  &_selected {
+    font-weight: 700;
+  }
+}

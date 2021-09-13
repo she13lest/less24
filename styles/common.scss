@@ -1,0 +1,41 @@
+.action-button {
+  width: 160px;
+  height: 48px;
+  background-color: #3040c4;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 2px;
+  border: none;
+
+  &_second {
+    color: $text-color-black;
+    background-color: $color-white;
+  }
+}
+
+.action-button {
+  @include for-large-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.hide_desctop {
+  @include for-large-up {
+    display: none;
+  }
+}
+
+.hide_mobile {
+  @include for-large-down {
+    display: none;
+  }
+}
+
+.icon-arrow_right {
+  display: block;
+  background-image: url('img/icon-arrow-right.png');
+  width: 7px;
+  height: 12px;
+}
