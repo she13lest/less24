@@ -8,6 +8,7 @@
 @import 'common.scss';
 @import 'tips.scss';
 @import 'audience.scss';
+@import 'order.scss';
 @import 'footer.scss';
 
 * {
@@ -23,10 +24,8 @@ html {
 .page {
   width: 100%;
   overflow-x: hidden;
-}
 
-@media screen and (min-width: 321px) {
-  .page {
+  @include for-large-up {
     display: flex;
     flex-direction: column;
     width: 1400px;

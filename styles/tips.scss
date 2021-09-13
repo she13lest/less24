@@ -1,58 +1,56 @@
 .tips {
   margin: 8px;
+
+  @include for-large-up {
+    display: none;
+  }
 }
 
 .tip {
   padding: 40px 15px 0 15px;
   border-bottom: 1px solid #e3e3e3;
-}
 
-.tip__subtitle {
-  color: #009b4d;
-  line-height: 34px;
-  font-size: 22px;
-  font-weight: 700;
-}
+  &__subtitle {
+    color: #009b4d;
+    line-height: 34px;
+    font-size: 22px;
+    font-weight: 700;
+  }
 
-.tip__title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
-  letter-spacing: -0.357143px;
-  margin: 0;
-  margin-top: 17px;
-}
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    margin: 0;
+    margin-top: 17px;
+  }
 
-.tip__description {
-  font-size: 24px;
-  line-height: 34px;
-  margin: 0;
-  margin-top: 13px;
-}
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0;
+    margin-top: 13px;
+  }
 
-.tip__decoration {
-  margin: 0;
-  margin-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  &__decoration {
+    margin: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.tip__image {
-  margin-top: 29px;
-}
+  &__image {
+    margin-top: 29px;
+  }
 
-.tip__image-caption {
-  font-size: 14px;
-  line-height: 22px;
-  text-align: center;
-  color: rgba(43, 41, 45, 0.6);
-  margin-top: 20px;
-  min-width: 100%;
-}
-
-@media screen and (min-width: 321px) {
-  .tips {
-    display: none;
+  &__image-caption {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(43, 41, 45, 0.6);
+    margin-top: 20px;
+    min-width: 100%;
   }
 }
