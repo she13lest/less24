@@ -591,10 +591,12 @@
   font-weight: 700;
   border-radius: 2px;
   border: none;
+  margin-top: 12px;
 }
 @media screen and (min-width: 1400px) {
   .audience__learn-more-btn {
     width: 158px;
+    margin-top: 0;
   }
 }
 .audience__categories {

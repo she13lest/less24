@@ -98,9 +98,11 @@
     font-weight: 700;
     border-radius: 2px;
     border: none;
+    margin-top: 12px;
 
     @include for-large-up {
       width: 158px;
+      margin-top: 0;
     }
   }
 
