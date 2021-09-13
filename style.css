@@ -84,6 +84,7 @@
 }
 @media screen and (min-width: 1400px) {
   .logo__description {
+    display: block;
     font-size: 18px;
     line-height: 25px;
     color: #2b292d;
@@ -105,7 +106,7 @@
 }
 .navigation__arrow {
   display: inline-block;
-  background-image: url(img/arrow.png);
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
   margin-left: 11px;
   width: 8px;
   height: 5px;
